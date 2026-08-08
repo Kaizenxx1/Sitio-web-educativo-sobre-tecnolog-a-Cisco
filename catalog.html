@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos Cisco generado con XML y XSLT.">
+    <title>Cisco Tech | Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="catalog.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor barra-navegacion">
+            <a class="logo" href="index.html">Cisco <span>Tech</span></a>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a class="activo" href="catalog.html">Catálogo</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecera-pagina">
+            <div class="contenedor">
+                <p class="etiqueta">XML + XSLT</p>
+                <h1>Catálogo de equipos</h1>
+                <p>Los productos que aparecen abajo se leen desde <strong>datos.xml</strong> y se transforman visualmente con <strong>catalogo.xsl</strong>.</p>
+            </div>
+        </section>
+        <section class="seccion catalogo-seccion contenedor" aria-labelledby="catalogo-titulo">
+            <h2 id="catalogo-titulo" class="solo-lectores">Productos del catálogo Cisco</h2>
+            <p id="estado-catalogo" class="estado-catalogo" role="status">Vista local del catálogo. Al publicar el sitio, los datos se cargarán desde XML y se transformarán con XSLT.</p>
+            <div id="catalogo-dinamico">
+                <!-- Respaldo visible cuando el navegador bloquea XML/XSLT en file:// -->
+                <div class="resumen-catalogo">
+                    <p><strong>6</strong> productos disponibles</p>
+                    <p>Datos definidos en datos.xml</p>
+                </div>
+                <div class="productos-grid">
+                    <article class="producto"><div class="producto-cabecera"><span class="producto-id">C001</span><span class="producto-categoria">Router</span></div><h2>Router Cisco ISR 1100</h2><p>Equipo para conectar una oficina de forma segura con Internet.</p><div class="producto-pie"><strong>USD $680.00</strong><span class="estado">Disponible</span></div></article>
+                    <article class="producto"><div class="producto-cabecera"><span class="producto-id">C002</span><span class="producto-categoria">Switch</span></div><h2>Switch Catalyst 9200</h2><p>Switch administrable para conectar computadoras y teléfonos IP.</p><div class="producto-pie"><strong>USD $1,240.00</strong><span class="estado">Disponible</span></div></article>
+                    <article class="producto"><div class="producto-cabecera"><span class="producto-id">C003</span><span class="producto-categoria">Seguridad</span></div><h2>Firewall Secure 1010</h2><p>Dispositivo que protege la red contra accesos y tráfico peligroso.</p><div class="producto-pie"><strong>USD $920.00</strong><span class="estado">Pocas unidades</span></div></article>
+                    <article class="producto"><div class="producto-cabecera"><span class="producto-id">C004</span><span class="producto-categoria">Wi-Fi</span></div><h2>Access Point 150AX</h2><p>Punto de acceso inalámbrico para pequeñas empresas y aulas.</p><div class="producto-pie"><strong>USD $310.00</strong><span class="estado">Disponible</span></div></article>
+                    <article class="producto"><div class="producto-cabecera"><span class="producto-id">C005</span><span class="producto-categoria">Colaboración</span></div><h2>Teléfono IP 8841</h2><p>Teléfono empresarial con audio de alta calidad y pantalla a color.</p><div class="producto-pie"><strong>USD $245.00</strong><span class="estado">Disponible</span></div></article>
+                    <article class="producto"><div class="producto-cabecera"><span class="producto-id">C006</span><span class="producto-categoria">Nube</span></div><h2>Meraki MX67</h2><p>Equipo de seguridad administrado fácilmente desde la nube.</p><div class="producto-pie"><strong>USD $760.00</strong><span class="estado">Bajo pedido</span></div></article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><div class="contenedor pie-contenido"><p>© 2026 Cisco Tech. Proyecto educativo.</p><p>Catálogo generado con XML y XSLT</p></div></footer>
+</body>
+</html>

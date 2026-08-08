@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalogo.xsl"?>
+<!DOCTYPE catalogo SYSTEM "catalogo.dtd">
+<catalogo fecha="2026-08-07">
+    <producto id="C001">
+        <nombre>Router Cisco ISR 1100</nombre>
+        <categoria>Router</categoria>
+        <descripcion>Equipo para conectar una oficina de forma segura con Internet.</descripcion>
+        <precio moneda="USD">680.00</precio>
+        <disponibilidad>Disponible</disponibilidad>
+    </producto>
+    <producto id="C002">
+        <nombre>Switch Catalyst 9200</nombre>
+        <categoria>Switch</categoria>
+        <descripcion>Switch administrable para conectar computadoras y teléfonos IP.</descripcion>
+        <precio moneda="USD">1240.00</precio>
+        <disponibilidad>Disponible</disponibilidad>
+    </producto>
+    <producto id="C003">
+        <nombre>Firewall Secure 1010</nombre>
+        <categoria>Seguridad</categoria>
+        <descripcion>Dispositivo que protege la red contra accesos y tráfico peligroso.</descripcion>
+        <precio moneda="USD">920.00</precio>
+        <disponibilidad>Pocas unidades</disponibilidad>
+    </producto>
+    <producto id="C004">
+        <nombre>Access Point 150AX</nombre>
+        <categoria>Wi-Fi</categoria>
+        <descripcion>Punto de acceso inalámbrico para pequeñas empresas y aulas.</descripcion>
+        <precio moneda="USD">310.00</precio>
+        <disponibilidad>Disponible</disponibilidad>
+    </producto>
+    <producto id="C005">
+        <nombre>Teléfono IP 8841</nombre>
+        <categoria>Colaboración</categoria>
+        <descripcion>Teléfono empresarial con audio de alta calidad y pantalla a color.</descripcion>
+        <precio moneda="USD">245.00</precio>
+        <disponibilidad>Disponible</disponibilidad>
+    </producto>
+    <producto id="C006">
+        <nombre>Meraki MX67</nombre>
+        <categoria>Nube</categoria>
+        <descripcion>Equipo de seguridad administrado fácilmente desde la nube.</descripcion>
+        <precio moneda="USD">760.00</precio>
+        <disponibilidad>Bajo pedido</disponibilidad>
+    </producto>
+</catalogo>

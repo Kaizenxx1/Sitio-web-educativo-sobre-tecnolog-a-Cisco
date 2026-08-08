@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto del proyecto Cisco Tech.">
+    <title>Cisco Tech | Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor barra-navegacion">
+            <a class="logo" href="index.html">Cisco <span>Tech</span></a>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="catalog.html">Catálogo</a></li>
+                    <li><a class="activo" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecera-pagina">
+            <div class="contenedor"><p class="etiqueta">Escríbenos</p><h1>Contacto</h1><p>Completa el formulario para enviarnos tus preguntas sobre tecnología Cisco.</p></div>
+        </section>
+
+        <section class="seccion contenedor contacto-rejilla">
+            <article class="contacto-info">
+                <h2>Estamos para ayudarte</h2>
+                <p>Todos los campos marcados con un asterisco son obligatorios. La información se utiliza únicamente como demostración educativa.</p>
+                <ul>
+                    <li><strong>Tema:</strong> Tecnología Cisco</li>
+                    <li><strong>Tipo:</strong> Proyecto académico</li>
+                    <li><strong>Respuesta:</strong> Formulario de demostración</li>
+                </ul>
+            </article>
+
+            <form id="formulario-contacto" class="formulario" novalidate>
+                <h2>Enviar un mensaje</h2>
+                <div class="campo">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="60" autocomplete="name" required aria-describedby="error-nombre">
+                    <small class="error" id="error-nombre"></small>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required aria-describedby="error-correo">
+                    <small class="error" id="error-correo"></small>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto *</label>
+                    <select id="asunto" name="asunto" required aria-describedby="error-asunto">
+                        <option value="">Selecciona una opción</option>
+                        <option value="redes">Redes</option>
+                        <option value="seguridad">Seguridad</option>
+                        <option value="catalogo">Catálogo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <small class="error" id="error-asunto"></small>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" minlength="10" maxlength="500" required aria-describedby="error-mensaje contador"></textarea>
+                    <small id="contador">0 / 500 caracteres</small>
+                    <small class="error" id="error-mensaje"></small>
+                </div>
+                <label class="aceptacion" for="terminos">
+                    <input type="checkbox" id="terminos" name="terminos" required aria-describedby="error-terminos">
+                    Acepto enviar estos datos para la demostración. *
+                </label>
+                <small class="error" id="error-terminos"></small>
+                <button class="boton" type="submit">Enviar mensaje</button>
+                <p id="mensaje-exito" class="mensaje-exito" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer><div class="contenedor pie-contenido"><p>© 2026 Cisco Tech. Proyecto educativo.</p><p>HTML5 · CSS · XML · XSLT</p></div></footer>
+</body>
+</html>
